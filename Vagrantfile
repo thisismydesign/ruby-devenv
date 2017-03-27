@@ -3,10 +3,7 @@
 
 require_relative 'utils'
 
-install_plugins(["vagrant-proxyconf"])
-
-# TODO
-# /usr/lib/nux/unity_support_test -p
+install_plugins(["vagrant-proxyconf", "vagrant-vbguest"])
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
@@ -73,7 +70,7 @@ Vagrant.configure("2") do |config|
     apt-get -qq update
     apt-get -qq install -y tofrodos
     find /vagrant/provision/*.sh | xargs fromdos
-    apt-get -qq install -y ubuntu-desktop
-    service lightdm start
+    /vagrant/provision/general-setup.sh
+    /vagrant/provision/ruby-setup.sh
   SHELL
 end
