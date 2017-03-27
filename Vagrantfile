@@ -76,5 +76,6 @@ Vagrant.configure("2") do |config|
     find /vagrant/provision/*.sh | xargs fromdos
     /vagrant/provision/general-setup.sh
     /vagrant/provision/ruby-setup.sh
+    /vagrant/provision/project-setup.sh
   SHELL
 end
