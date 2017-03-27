@@ -17,6 +17,6 @@ else
   echoerr "Unity 3D NOT supported (Guest Additions not installed correctly). Unless fixed it will cause performance issues."
 fi
 
-apt-get install -y tree git ubuntu-make
+apt-get install -y tree git ubuntu-make expect
 
-yes '\n' | umake ide sublime-text
+expect -f general-setup-expect.sh
