@@ -10,3 +10,5 @@ source ~/.rvm/scripts/rvm
 rvm install ruby --latest
 bash --login
 rvm use ruby --latest
+
+gem install bundler
