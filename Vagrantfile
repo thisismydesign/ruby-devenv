@@ -54,6 +54,8 @@ Vagrant.configure("2") do |config|
     vb.gui = true
     vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
     vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
+    vb.customize ["modifyvm", :id, "--vram", "128"]
+    vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
   end
 
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
