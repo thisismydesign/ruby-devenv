@@ -3,7 +3,10 @@
 
 require_relative 'utils'
 
-install_plugins(["vagrant-vbguest", "vagrant-proxyconf"])
+install_plugins(["vagrant-proxyconf"])
+
+# TODO
+# /usr/lib/nux/unity_support_test -p
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
@@ -43,20 +46,10 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
 
-  # Provider-specific configuration so you can fine-tune various
-  # backing providers for Vagrant. These expose provider-specific options.
-  # Example for VirtualBox:
-  #
-  # config.vm.provider "virtualbox" do |vb|
-  #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  #   # Customize the amount of memory on the VM:
-  #   vb.memory = "1024"
-  # end
-  #
-  # View the documentation for the provider you are using for more
-  # information on available options.
+  # Config settings
+  # config.proxy.http     = ""
+  # config.proxy.https    = ""
+  # config.proxy.no_proxy = ""
 
   config.vm.provider :virtualbox do |vb|
     vb.memory = 4096
