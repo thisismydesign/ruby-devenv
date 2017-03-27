@@ -73,7 +73,6 @@ Vagrant.configure("2") do |config|
     apt-get -qq update
     apt-get -qq install -y tofrodos
     find /vagrant/provision/*.sh | xargs fromdos
-    /vagrant/provision/test.sh
     apt-get -qq install -y ubuntu-desktop
     service lightdm start
   SHELL
