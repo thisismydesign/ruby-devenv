@@ -19,4 +19,4 @@ fi
 
 apt-get install -y tree git ubuntu-make expect
 
-expect -f general-setup-expect.sh
+expect -f $(dirname "$0")/general-setup-expect.sh
