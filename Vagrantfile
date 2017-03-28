@@ -74,8 +74,6 @@ Vagrant.configure("2") do |config|
     apt-get -qq update
     apt-get -qq install -y tofrodos
     find /vagrant/provision/*.sh | xargs fromdos
-    /vagrant/provision/general-setup.sh
-    /vagrant/provision/ruby-setup.sh
-    /vagrant/provision/project-setup.sh
+    /vagrant/provision/setup.sh
   SHELL
 end
