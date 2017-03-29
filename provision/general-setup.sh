@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo_headline "General setup started"
-
 source $(dirname "$0")/utils.sh
+
+echo_headline "General setup started"
 
 echo_headline "Adding and updating repositories..."
 add-apt-repository ppa:ubuntu-desktop/ubuntu-make

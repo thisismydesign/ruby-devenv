@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo_headline "Ruby setup started"
-
 source $(dirname "$0")/utils.sh
+
+echo_headline "Ruby setup started"
 
 echo_headline "Installing apps via umake..."
 expect -f $(dirname "$0")/ruby-setup-expect.sh
