@@ -30,3 +30,11 @@ https://github.com/rvm/rvm1-ansible
 ### ISSUES
 
 expect timeout doesn't return error
+
+---------------
+
+During umake install:
+
+dconf-WARNING **: failed to commit changes to dconf: Cannot autolaunch D-Bus without X11 $DISPLAY
+
+Possibly related to shortcuts not created
