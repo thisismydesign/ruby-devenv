@@ -3,10 +3,14 @@
 ### Boxes:
 
 ubuntu/xenial64 is broken:
+
 https://bugs.launchpad.net/cloud-images/+bug/1569237
 
 boxcutter/ubuntu1604-desktop is broken on VirtualBox:
+
 https://github.com/boxcutter/ubuntu/issues/101
+
+Furthermore there're several issues that slow the startup (e.g. 90 second timeout looking for swap device) so in the end it's faster to install Unity on an official ubuntu-server box one time than to have a slow startup every time.
 
 ### Currently using ubuntu/trusty64
 
@@ -25,6 +29,4 @@ https://github.com/rvm/rvm1-ansible
 
 ### ISSUES
 
-umake command with expect won't run after send
-
-bundle is not found 
+expect timeout doesn't return error
