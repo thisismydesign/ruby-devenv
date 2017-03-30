@@ -25,4 +25,4 @@ echo_headline "Installing apps via apt..."
 apt-get install -y tree git ubuntu-make expect
 
 echo_headline "Installing apps via umake..."
-expect -c 'spawn umake ide sublime-text; expect "Choose installation path:" { send "\r" }; expect "Installation done"'
+expect -c 'spawn umake ide sublime-text; expect "Choose installation path:" { send "\r" }; set timeout 900; expect "Installation done"'
