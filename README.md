@@ -1,6 +1,26 @@
 # ruby-devenv
 
-### Boxes:
+### Virtual development environment for any Ruby project with 1 click
+
+### Features
+
+- automatic installation and setup
+  - RVM, Ruby and Bundler
+  - IDEs
+  - project dependencies
+  - popular tools
+- easy integration, doesn't disturb base project
+- any host and any Ubuntu / Debian guest system*
+
+/* tested on Ubuntu 14.04 LTS, slight alterations may be needed for other systems
+
+### Requirements
+
+### Usage
+
+### Technical details
+
+#### Boxes
 
 ubuntu/xenial64 is broken:
 
