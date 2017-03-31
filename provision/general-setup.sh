@@ -22,7 +22,7 @@ else
 fi
 
 echo_headline "Installing apps via apt..."
-sudo apt-get install -y tree git ubuntu-make expect
+sudo apt-get install -y tree git ubuntu-make expect nautilus-open-terminal
 
 echo_headline "Installing apps via umake..."
 expect -c 'spawn umake ide sublime-text; expect "Choose installation path:" { send "\r" }; set timeout 900; expect "Installation done"'
