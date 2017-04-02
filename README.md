@@ -30,6 +30,12 @@ Add this project as a submodule to your Ruby project's root
 
 `git submodule add https://github.com/thisismydesign/ruby-devenv`
 
+Checkout its content
+
+`git submodule init`
+
+`git submodule update`
+
 More info on submodules [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ### Usage
@@ -43,6 +49,16 @@ Wait for the setup to finish (indicated by `Provision executed in %hh-%mm-%ss`).
 Manage your box via [vagrant CLI](https://www.vagrantup.com/docs/cli/) or VirtualBox.
 
 ### Performance
+
+Highly depends on your host system. Test system: `i5-6500 CPU | 16 GB RAM | 500 Mbps Network | SSD`
+
+- Initial host setup ~ 3 minutes (1 time)
+
+- Initial guest setup ~ 10-15 minutes (1 time / VM)
+
+  - ~3-5 minutes of that is installing ubuntu-desktop which would be bypassed with an ideal Vagrant Box (more in the [Boxes section](https://github.com/thisismydesign/ruby-devenv/blob/master/README.md#boxes)).
+
+- Guest boot ~ 30 seconds (every time)
 
 ### Technical details
 
