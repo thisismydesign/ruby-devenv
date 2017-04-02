@@ -3,7 +3,7 @@
 
 require_relative 'utils'
 
-install_plugins(["vagrant-proxyconf", "vagrant-vbguest"])
+install_plugins(["vagrant-proxyconf", "vagrant-vbguest", "vagrant-faster"])
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
@@ -45,8 +45,6 @@ Vagrant.configure("2") do |config|
   # config.proxy.no_proxy = ""
 
   config.vm.provider :virtualbox do |vb|
-    vb.memory = 4096
-    vb.cpus = 2
     vb.gui = true
     vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
     vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
