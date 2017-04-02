@@ -84,10 +84,11 @@ https://www.simonholywell.com/post/2016/02/intelligent-vagrant-and-ansible-files
 
 https://github.com/rvm/rvm1-ansible
 
-#### ISSUES
+#### Known issues
 
 - expect timeout doesn't return error
 - During umake install:
   - dconf-WARNING **: failed to commit changes to dconf: Cannot autolaunch D-Bus without X11 $DISPLAY
   - Possibly related to shortcuts not created
-- virtualbox-guest-x11 reinstalled
+- install of `build-essential linux-headers-$(uname -r) virtualbox-guest-x11` needed, otherwise [Unity issue](http://askubuntu.com/questions/17381/unity-doesnt-load-no-launcher-no-dash-appears) presents
+- RubyMine defaults are not installed
