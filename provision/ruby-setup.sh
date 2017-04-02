@@ -7,6 +7,14 @@ echo_headline "Ruby setup started"
 echo_headline "Installing apps via umake..."
 expect -c 'spawn umake ide rubymine; expect "Choose installation path:" { send "\r" }; set timeout 900; expect "Installation done"'
 
+echo_headline "Setting up RubyMine settings..."
+# Start RubyMine so it creates config dir
+~/.local/share/umake/ide/rubymine/bin/rubymine.sh &
+sleep 1
+# Kill it afterwards
+pkill -f rubymine
+unzip /vagrant/settings/ruybmine-default.jar -d ~/.RubyMine*/config
+
 echo_headline "Installing RVM..."
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable --quiet-curl
