@@ -10,14 +10,37 @@
   - project dependencies
   - popular tools
 - easy integration, doesn't interfere with base project
-- any host and any Ubuntu / Debian guest system*
+- smart resource allocation based on the host system's available resources*
+- any host and any Ubuntu / Debian guest system**
 - base project is synchronized and available on both host and guest systems
 
-\* tested on Ubuntu 14.04 LTS, slight alterations may be needed for other systems
+\* all virtual CPU cores, 1/4th of memory (via [vagrant-faster](https://github.com/rdsubhas/vagrant-faster))
+
+\** tested on Ubuntu 14.04 LTS, slight alterations may be needed for other systems
 
 ### Requirements
 
+[Vagrant](https://www.vagrantup.com/) (tested on 1.9.3)
+
+[VirtualBox](https://www.virtualbox.org/) (tested on 5.1.18)
+
+### Setup
+
+Add this project as a submodule to your Ruby project's root
+
+`git submodule add https://github.com/thisismydesign/ruby-devenv`
+
+More info on submodules [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
 ### Usage
+
+Inside the submodule directory
+
+`vagrant up`
+
+Wait for the setup to finish (indicated by `Provision executed in %hh-%mm-%ss`).
+
+Manage your box via [vagrant CLI](https://www.vagrantup.com/docs/cli/) or VirtualBox.
 
 ### Performance
 
