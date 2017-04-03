@@ -56,7 +56,7 @@ Highly depends on your host system. Test system: `i5-6500 CPU | 16 GB RAM | 500 
 
 - Initial guest setup ~ 10-15 minutes (1 time / VM)
 
-  - ~3-5 minutes of that is installing ubuntu-desktop which would be bypassed with an ideal Vagrant Box (more in the [Boxes section](https://github.com/thisismydesign/ruby-devenv/blob/master/README.md#boxes)).
+  - ~3-5 minutes of that is installing ubuntu-desktop which could be bypassed with an ideal Vagrant Box (more in the [Boxes section](https://github.com/thisismydesign/ruby-devenv/blob/master/README.md#boxes)).
 
 - Guest boot ~ 30 seconds (every time)
 
@@ -91,4 +91,4 @@ https://github.com/rvm/rvm1-ansible
   - dconf-WARNING **: failed to commit changes to dconf: Cannot autolaunch D-Bus without X11 $DISPLAY
   - Possibly related to shortcuts not created
 - install of `build-essential linux-headers-$(uname -r) virtualbox-guest-x11` needed, otherwise [Unity issue](http://askubuntu.com/questions/17381/unity-doesnt-load-no-launcher-no-dash-appears) presents
-- RubyMine defaults are not installed
+- bunch of unnecessary output (no quiet mode for RVM, umake, etc)
