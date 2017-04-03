@@ -7,12 +7,9 @@ echo_headline "Ruby setup started"
 echo_headline "Installing apps via umake..."
 expect -c 'spawn umake ide rubymine; expect "Choose installation path:" { send "\r" }; set timeout 900; expect "Installation done"'
 
-echo_headline "Setting up RubyMine settings..."
-# Start RubyMine so it creates config dir
-~/.local/share/umake/ide/rubymine/bin/rubymine.sh &
-sleep 1
-# Kill it afterwards
-pkill -f rubymine
+echo_headline "Setting up RubyMine..."
+rubymine_version=$(get_rubymine_version_from_executable ~/.local/share/umake/ide/rubymine/bin/rubymine.sh)
+mkdir -p ~/.$rubymine_version/config
 unzip /vagrant/settings/ruybmine-default.jar -d ~/.RubyMine*/config
 
 echo_headline "Installing RVM..."
