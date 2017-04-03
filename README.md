@@ -4,7 +4,7 @@
 
 ### Features
 
-- automatic installation and setup
+- automatic installation and setup (for details see [Installed tools](https://github.com/thisismydesign/ruby-devenv#installed-tool))
   - RVM, Ruby and Bundler
   - IDEs
   - project dependencies
@@ -26,11 +26,11 @@
 
 ### Setup
 
-Add this project as a submodule to your Ruby project's root
+Add this project to your Ruby project's root in it's own subdirectory (e.g. `<project_root>/ruby-devenv`)
+
+Using `git` this can easily be achieved via submodules:
 
 `git submodule add https://github.com/thisismydesign/ruby-devenv`
-
-Checkout its content
 
 `git submodule init`
 
@@ -40,7 +40,7 @@ More info on submodules [here](https://git-scm.com/book/en/v2/Git-Tools-Submodul
 
 ### Usage
 
-Inside the submodule directory
+Inside `ruby-devenv`'s directory execute
 
 `vagrant up`
 
@@ -73,6 +73,20 @@ Many Vagrant boxes are available in [Atlas](https://atlas.hashicorp.com/boxes/se
 - 3rd party boxes in general are
   - less reliable 
   - updated less frequently
+
+#### Installed tools
+
+All tool are installed with latest stable version available unless indicated otherwise
+
+- RVM, Ruby, Bundler
+
+- RubyMine, Sublime Text
+
+- Git, tree, umake, expect, nautilus-open-terminal
+
+- VirtualBox Guest Additions
+
+- Base project's gem dependencies (assuming directory structure defined in [Setup](https://github.com/thisismydesign/ruby-devenv/blob/master/README.md#setup))
 
 #### TODO
 
