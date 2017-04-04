@@ -7,4 +7,4 @@ echo_headline "Project setup started"
 fix_rvm_availability
 
 echo_headline "Installing project dependencies..."
-(cd /workspace && bundle install)
+(cd /workspace && bundle install --quiet)

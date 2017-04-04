@@ -19,4 +19,4 @@ gpg --quiet --no-verbose --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796
 fix_rvm_availability
 
 echo_headline "Installing bundler..."
-gem install bundler
+gem install bundler --no-document --silent
