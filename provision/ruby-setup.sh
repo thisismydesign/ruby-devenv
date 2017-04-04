@@ -13,7 +13,7 @@ mkdir -p ~/.$rubymine_version/config
 unzip /vagrant/settings/ruybmine-default.jar -d ~/.RubyMine*/config
 
 echo_headline "Installing RVM..."
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+gpg --quiet --no-verbose --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable --ruby --quiet-curl
 
 fix_rvm_availability
