@@ -11,3 +11,5 @@ fix_rvm_availability() { source ~/.rvm/scripts/rvm; bash --login; }
 seconds_to_hh_mm_ss() { printf '%02dh:%02dm:%02ds\n' $(($@/3600)) $(($@%3600/60)) $(($@%60)); }
 
 get_rubymine_version_from_executable() { cat $@ | grep -E -o -h -m 1 'RubyMine[[:digit:]]{4}\.[[:digit:]]{1}'; }
+
+enable_command_print() { set -x; }
