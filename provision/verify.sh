@@ -1,7 +1,6 @@
 #!/bin/bash
 
 source $(dirname "$0")/utils.sh
-enable_command_print
 
 if [[ $(is_unity_3d_supported) ]]; then
   echo "Unity 3D supported (Guest Additions installed correctly)"

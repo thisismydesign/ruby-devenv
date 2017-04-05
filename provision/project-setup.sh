@@ -1,7 +1,6 @@
 #!/bin/bash
 
 source $(dirname "$0")/utils.sh
-enable_command_print
 
 echo_headline "Project setup started"
 
