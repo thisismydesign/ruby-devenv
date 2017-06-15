@@ -62,7 +62,7 @@ Highly depends on the host system. Test system: `i5-6500 CPU | 16 GB RAM | 500 M
 
 Currently using official [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) box.
 
-Many Vagrant boxes are available in [Atlas](https://atlas.hashicorp.com/boxes/search). Ideally we'd use ubuntu/xenial64-desktop however there's several issues:
+Many Vagrant boxes are available in [Atlas](https://atlas.hashicorp.com/boxes/search). Ideally we'd use ubuntu/xenial64-desktop however there're several issues:
 - Ubuntu doesn't ship desktop boxes
 - [ubuntu/xenial64](https://atlas.hashicorp.com/ubuntu/boxes/xenial64) is broken (non-compliant): https://bugs.launchpad.net/cloud-images/+bug/1569237
 - [boxcutter/ubuntu1604-desktop](https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1604-desktop) (a popular 3rd party box) is broken on VirtualBox: https://github.com/boxcutter/ubuntu/issues/101. Furthermore there're several issues that slow the startup (e.g. 90 second timeout looking for swap device) so in the end it's faster to install Unity on an official ubuntu-server box one time than to have a slow startup every time.
