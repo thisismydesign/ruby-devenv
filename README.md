@@ -86,9 +86,9 @@ All tool are installed with latest stable version available unless indicated oth
 
 #### TODO
 
-https://github.com/rdsubhas/vagrant-faster
-
 https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck#toc_1
+
+VM setup with ansible instead of bash:
 
 https://www.simonholywell.com/post/2016/02/intelligent-vagrant-and-ansible-files/
 
