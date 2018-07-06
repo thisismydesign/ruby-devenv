@@ -50,6 +50,17 @@ Wait for the setup to finish (indicated by `Provision executed in %hh-%mm-%ss`).
 
 Manage the box via [vagrant CLI](https://www.vagrantup.com/docs/cli/) or VirtualBox.
 
+#### Manual steps
+- Configure git
+```
+git config --global user.email ""
+git config --global user.name ""
+```
+- Configure access via keys (e.g. to github)
+```
+cat ~/.ssh/id_rsa.pub
+```
+
 ### Performance
 
 Highly depends on the host system. Test system: `i5-6500 CPU | 16 GB RAM | 500 Mbps Network | SSD`
