@@ -31,11 +31,12 @@ vagrant plugin install vagrant-proxyconf vagrant-vbguest vagrant-faster
 
 ### Setup
 
-Checkout this project to a Ruby project's root in it's own subdirectory (e.g. `<project_root>/ruby-devenv`) and keep it up to date.
+Checkout this project to a Ruby project's root in it's own subdirectory (e.g. `<project_root>/ruby-devenv`) and keep it up to date. Using `git` this can easily be achieved via submodules:
 
-Using `git` this can easily be achieved via submodules:
-
-`git submodule add https://github.com/thisismydesign/ruby-devenv`
+```bash
+git submodule add https://github.com/thisismydesign/ruby-devenv
+git submodule update --remote ruby-devenv
+```
 
 More info on git submodules [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules). An example of `ruby-denenv` used as a submodule can be found [here](https://github.com/thisismydesign/json-streamer).
 
