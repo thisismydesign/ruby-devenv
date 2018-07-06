@@ -46,7 +46,7 @@ Inside `ruby-devenv`'s directory execute
 
 `vagrant up`
 
-Wait for the setup to finish (indicated by `Provision executed in %hh-%mm-%ss`).
+Wait for the setup to finish (indicated by `Provision executed in %hh-%mm-%ss`). If you encounter issues during the first setup (e.g. with UI) try to restart the VM.
 
 Manage the box via [vagrant CLI](https://www.vagrantup.com/docs/cli/) or VirtualBox.
 
