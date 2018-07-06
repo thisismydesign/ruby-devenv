@@ -24,6 +24,11 @@
 
 [VirtualBox](https://www.virtualbox.org/) (tested on 5.1.18)
 
+Some vagrant plugins:
+```bash
+vagrant plugin install vagrant-proxyconf vagrant-vbguest vagrant-faster
+```
+
 ### Setup
 
 Checkout this project to a Ruby project's root in it's own subdirectory (e.g. `<project_root>/ruby-devenv`) and keep it up to date.
