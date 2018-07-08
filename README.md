@@ -93,7 +93,7 @@ All tool are installed with latest stable version available unless indicated oth
 
 - RVM, Ruby, Bundler
 
-- RubyMine, Sublime Text
+- RubyMine, Sublime Text, Visual Studio Code
 
 - Git, tree, umake, expect, nautilus-open-terminal
 
