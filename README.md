@@ -95,7 +95,7 @@ All tool are installed with latest stable version available unless indicated oth
 
 - RubyMine, Sublime Text, Visual Studio Code
 
-- Git, tree, umake, expect, nautilus-open-terminal, snap
+- Git, tree, umake, expect, nautilus-open-terminal, snap, heroku CLI
 
 - VirtualBox Guest Additions
 
