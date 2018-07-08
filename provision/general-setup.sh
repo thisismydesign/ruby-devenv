@@ -21,6 +21,13 @@ sudo apt-get install -y tree git ubuntu-make expect nautilus-open-terminal snapd
 echo_headline "Installing apps via snap..."
 sudo snap install heroku --classic
 
+echo_headline "Setting up custom bashrc..."
+echo '' >> ~/.bashrc
+echo '# Custom stuff' >> ~/.bashrc
+echo 'export PATH="/snap/bin:$PATH"' >> ~/.bashrc
+echo "alias be='bundle exec'" >> ~/.bashrc
+echo "alias ber='bundle exec rspec'" >> ~/.bashrc
+
 echo_headline "Setting up git to use LF line endings..."
 # For more info see https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_formatting_and_whitespace
 git config --global core.autocrlf input
